@@ -4,7 +4,7 @@ window.axios = axios
 axios.defaults.withCredentials = true;
 
 export const Api = axios.create({
-    baseURL: `http://localhost:1981/`,
+    baseURL: `http://18.231.173.211:1981/`,
     headers: {
         'Authorization': `Bearer ${JSON.parse(localStorage.getItem('token'))}` 
     }
