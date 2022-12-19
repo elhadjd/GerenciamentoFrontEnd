@@ -1,0 +1,160 @@
+.Dashboard {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+    .MenuLateral {
+        width: 100%;
+        background-color: rgba(0, 2, 16, 0.834);
+
+        .logo {
+            padding: 10px;
+            h2 {
+                font-size: 18px;
+                text-align: center;
+                color: white;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+
+        .navbar {
+            ul li {
+                color: rgb(184, 184, 184);
+                padding: 10px;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.869);
+                    color: rgb(60, 58, 58);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .Menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            height: 8%;
+            background-color: white;
+            input[type=text] {
+                width: 300px;
+                padding: 6px;
+                border: 1px solid #ddd;
+                border-radius: 3px;
+            }
+
+            .pesquisa {
+                span {
+                    .searchIcone {
+                        margin-left: -22px;
+                        position: absolute;
+                        margin-top: 6px;
+                    }
+                }
+            }
+
+            .user {
+                display: flex;
+                align-items: center;
+                >svg{
+                    color: #017e84 !important;
+                }
+                span{
+                    position: relative;
+                    .userDefault{
+                        font-size: 30px;
+                        fill: #017e84;
+                        margin-right: 10px;
+                    }
+                    .iconAdmin{
+                        position: absolute;
+                        margin-left: 20px;
+                        color: rgba(4, 128, 4, 0.72);
+                    }
+                }
+                img {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+            }
+
+        }
+
+        .content {
+            height: 92%;
+            background-color: #ddd;
+            display: flex;
+            flex-direction: column;
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 20px;
+                height: 30%;
+                padding: 10px;
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 100%;
+                    background-color: white;
+                    border-radius: 4px;
+                    padding: 10px;
+                    box-shadow: 0 2rem 10rem #f7f7f78b !important;
+                    .CardTop{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        .cardContent {
+                            display: flex;
+                            flex-direction: column;
+                            span:nth-child(1) {
+                                
+                                margin-bottom: 20px;
+                            }
+                            span:nth-child(2) {
+                                font-size: 20px;
+                                font-weight: 600;
+                            }
+                        }
+                        .IconsLicense {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 30px;
+                            height: 30px;
+                            background-color: rgba(0, 62, 186, 0.318);
+                            border-radius: 4px;
+                            padding: 6px;
+                            font-size: 25px;
+                            >svg {
+                                fill: rgb(0, 62, 186);
+                                font-size: 16px;
+                            }
+                        }
+                        
+                    }
+                    .CardFooter strong{
+                        color: rgba(4, 128, 4, 0.72);
+                    }
+                }
+            }
+            .ClientsList{
+                height: 70%;
+                width: 100%;
+            }
+        }
+    }
+}

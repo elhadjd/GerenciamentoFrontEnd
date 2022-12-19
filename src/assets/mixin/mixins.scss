@@ -1,0 +1,18 @@
+// Mixins da aplicação
+@mixin botao_normal {
+    background: #017e84;
+    border:none;
+    font: 10pt arial;
+    font-weight: 600;
+    padding: 5px 10px 5px 10px;
+    min-width: 100px;
+    max-width: 200px;
+    color: white;
+    border: 1px solid #017e84;
+    &:hover {
+        cursor: pointer;
+        background: #00686e26;
+        color: #00686e;
+        border: 1px solid #00686e4a;
+    }
+}
